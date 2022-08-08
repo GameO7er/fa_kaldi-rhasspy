@@ -42,3 +42,31 @@ python3 transcribe.py vosk-model-small-fa-rhasspy-0.15 welcome.wav
 ```
 
 For each audio file given to `transcribe.py`, a line of JSON will be printed in the output with the transcription details.
+
+## Troubleshooting
+
+if you face this error:
+```
+ModuleNotFoundError: No module named "numpy"
+
+```
+check [this issue]([url](https://github.com/rhasspy/fa_kaldi-rhasspy/issues/2))
+
+if you face this error:
+```
+ModuleNotFoundError: No module named "librosa"
+
+```
+check [this issue]([url](https://github.com/rhasspy/fa_kaldi-rhasspy/issues/3))
+
+if you face this error:
+```
+/your/path/.venv/lib/python3.9/site-packages/librosa/util/decorators.py:88: UserWarning: PySoundFile failed. Trying audioread instead.
+  return f(*args, **kwargs)
+  
+  ```
+  check [this issue]([url](https://github.com/rhasspy/fa_kaldi-rhasspy/issues/4))
+  
+If you got any other error feel free to open an new issue [here]([url](https://github.com/rhasspy/fa_kaldi-rhasspy/issues/new/choose)) and describe your problem specific.
+
+
